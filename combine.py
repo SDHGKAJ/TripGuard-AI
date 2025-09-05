@@ -47,3 +47,5 @@ else:
     # Save merged dataset
     crime_master.to_csv("crime_merged.csv", index=False)
     print("✅ Crime datasets merged into: crime_merged.csv")
+
+    print("Done")
