@@ -1,0 +1,573 @@
+country,region,air_quality_Carbon_Monoxide,air_quality_Ozone,air_quality_Nitrogen_dioxide,air_quality_Sulphur_dioxide,air_quality_PM2.5,air_quality_PM10,air_quality_us-epa-index
+India,Madhya Pradesh,243.7,45.8,1.7,3.1,12.6,18.5,1
+India,Madhya Pradesh,240.3,38.3,2.1,2.6,10.7,14.2,1
+India,Madhya Pradesh,220.3,57.2,0.6,1.7,16.8,20.7,2
+India,Madhya Pradesh,200.3,25,1.2,1.1,4.9,6.6,1
+India,Madhya Pradesh,257,30.8,2.2,1.8,11.4,14.8,1
+India,Madhya Pradesh,223.6,26.1,3.1,3.3,7.9,10.5,1
+India,Madhya Pradesh,263.7,56.5,1.2,1.8,17.1,23.1,2
+India,Madhya Pradesh,260.4,52.9,1.2,1.8,17.3,23.7,2
+India,Madhya Pradesh,243.7,79.4,1.1,5.4,27.4,35.5,2
+India,Madhya Pradesh,210.3,32.2,1.7,1.7,5.7,7.6,1
+India,Madhya Pradesh,260.4,80.8,2,7.6,21.9,26.8,2
+India,Madhya Pradesh,210.3,68,0.6,0.7,12.5,15.6,1
+India,Madhya Pradesh,257,68,1.6,1,15.9,20.7,2
+India,Madhya Pradesh,205.3,25,2.7,4.8,6.2,8.2,1
+India,Madhya Pradesh,237,73,1,2.3,19.3,24.2,2
+India,Madhya Pradesh,243.7,79.4,1.1,5.4,27.4,35.5,2
+India,Madhya Pradesh,227,27.9,2.8,3.2,6.2,8,1
+India,Madhya Pradesh,208.6,32.9,1.9,2.8,8,10.8,1
+India,Madhya Pradesh,205.3,29.3,1.5,1.7,6.8,9.4,1
+India,Madhya Pradesh,253.7,56.5,1.1,1.7,18.5,25.5,2
+India,Madhya Pradesh,220.3,36.8,2.2,1.5,9.9,14.3,1
+India,Uttar Pradesh,247,70.1,1.2,2.7,22.8,33.9,2
+India,Madhya Pradesh,243.7,45.8,1.7,2.4,13.1,20.5,1
+India,Madhya Pradesh,220.3,30,2.4,2.3,5.2,7,1
+India,Madhya Pradesh,247,31.5,2.8,4.4,13.5,17.1,1
+India,Madhya Pradesh,205.3,25,2.7,4.8,6.2,8.2,1
+India,Madhya Pradesh,227,70.8,1.3,2.6,14.4,26.3,1
+India,Madhya Pradesh,233.7,64.4,1.1,1.1,16.4,30.8,2
+India,Madhya Pradesh,247,68,1.3,1.2,17.3,28.2,2
+India,Madhya Pradesh,217,31.1,2.4,2.6,8.9,12.5,1
+India,Madhya Pradesh,203.6,60.8,0.4,0.7,8,12,1
+India,Madhya Pradesh,198.6,30,1.4,2.1,6.5,9.1,1
+India,Madhya Pradesh,230.3,65.8,4.7,14.8,18.2,23,2
+India,Madhya Pradesh,233.7,68.7,1.2,1.5,16.7,29.9,2
+India,Madhya Pradesh,237,65.1,0.8,2.7,19.9,27,2
+India,Madhya Pradesh,203.6,30,1.5,1.4,6.2,8.1,1
+India,Orissa,397.2,63.7,20.1,38.6,56.4,65,3
+India,Madhya Pradesh,257,76.5,1.3,4.7,21.9,26.6,2
+India,Madhya Pradesh,208.6,29,2.8,2.4,9.5,13.5,1
+India,Madhya Pradesh,230.3,25.4,2.9,3,8.4,11.3,1
+India,Rajasthan,223.6,59.4,1.9,0.9,20.8,93.6,2
+India,Madhya Pradesh,243.7,58.7,1.1,1.2,15,19.6,1
+India,Madhya Pradesh,223.6,35.1,2.6,3.7,10.7,14.8,1
+India,Madhya Pradesh,240.3,82.3,2.3,7,27.2,42.5,2
+India,Madhya Pradesh,243.7,87.3,2,8.5,30.1,43.3,2
+India,Madhya Pradesh,193.6,30.8,0.6,0.7,3.3,6,1
+India,Madhya Pradesh,213.6,79.4,4.8,19.6,17.9,22.8,2
+India,Madhya Pradesh,243.7,65.1,1.2,1.2,17.1,21.1,2
+India,Madhya Pradesh,240.3,38.3,2.1,2.6,10.7,14.2,1
+India,Gujarat,191.9,36.1,1.3,3.2,13.7,24.3,1
+India,Himachal Pradesh,433.9,125.9,2.3,10.5,27.8,30.9,2
+India,Madhya Pradesh,240.3,71.5,0.8,2.8,18.3,24.4,2
+India,Himachal Pradesh,423.9,128.8,6.4,2.1,25.3,32.3,2
+India,Himachal Pradesh,433.9,125.9,2.3,10.5,27.8,30.9,2
+India,Chhattisgarh,250.3,69.4,0.9,0.8,16.9,20.8,2
+India,Himachal Pradesh,467.3,128.8,11.5,2.2,23.5,27.9,2
+India,Himachal Pradesh,353.8,89.4,0.5,0.5,19,21.2,2
+India,Uttar Pradesh,253.7,70.8,1.3,2.1,20.2,29.5,2
+India,Jammu and Kashmir,948,36.5,32.9,5.9,43.8,58.7,3
+India,Jammu and Kashmir,894.6,41.1,17.7,3.7,51.2,67.1,3
+India,Jammu and Kashmir,327.1,82.3,0.5,0.4,6.3,7.8,1
+India,Jammu and Kashmir,894.6,41.1,17.7,3.7,51.2,67.1,3
+India,Jammu and Kashmir,894.6,41.1,17.7,3.7,51.2,67.1,3
+India,Jammu and Kashmir,948,36.5,32.9,5.9,43.8,58.7,3
+India,Jammu and Kashmir,176.9,84.4,0.1,0.1,4.6,6.8,1
+India,Jammu and Kashmir,741,95.8,14.2,8.2,37.3,43.1,2
+India,Jammu and Kashmir,317.1,93,1.1,0.4,8.1,10.7,1
+India,Jammu and Kashmir,741,95.8,14.2,8.2,37.3,43.1,2
+India,Jammu and Kashmir,277,82.3,0.6,0.4,6.9,8.9,1
+India,Jammu and Kashmir,741,95.8,14.2,8.2,37.3,43.1,2
+India,Jammu and Kashmir,948,36.5,32.9,5.9,43.8,58.7,3
+India,Jammu and Kashmir,741,95.8,14.2,8.2,37.3,43.1,2
+India,Uttar Pradesh,243.7,70.1,1.4,2,19.7,29.2,2
+India,Jammu and Kashmir,454,68.7,1.2,2.4,14.3,22.5,1
+India,Jammu and Kashmir,948,36.5,32.9,5.9,43.8,58.7,3
+India,Jammu and Kashmir,567.4,123,3.2,2.1,39.1,44.5,2
+India,Jammu and Kashmir,237,78,0.2,0.2,10.3,14.5,1
+India,Jammu and Kashmir,280.4,89.4,0.5,0.2,6.4,8.1,1
+India,Daman and Diu,173.6,34.7,0.2,0.3,9.9,17.6,1
+India,Daman and Diu,178.6,31.8,0.1,0.5,14.4,29,1
+India,Gujarat,193.6,35.4,1,1,8.9,14.5,1
+India,Rajasthan,195.3,55.1,0.9,0.9,31.6,151.8,2
+India,Gujarat,210.3,37.9,2,2.3,9.6,16.9,1
+India,Uttar Pradesh,317.1,88,2.7,4.8,30.1,39.5,2
+India,Uttar Pradesh,317.1,88,2.7,4.8,30.1,39.5,2
+India,Gujarat,195.3,35.8,0.9,1.2,9.7,15.8,1
+India,Gujarat,203.6,34.7,1.7,1.7,10.1,18.5,1
+India,Gujarat,188.6,32.9,1.2,1.6,13,20.8,1
+India,Gujarat,217,31.1,2.4,2.6,8.9,12.5,1
+India,Gujarat,183.6,33.6,0.6,0.7,13.9,27.3,1
+India,Gujarat,208.6,31.8,2.5,2.3,10,16.6,1
+India,Gujarat,190.3,31.8,1.9,2.8,16.1,27.2,2
+India,Gujarat,186.9,37.6,0.7,0.7,9.3,17.4,1
+India,Gujarat,178.6,31.8,0.1,0.5,14.4,29,1
+India,Gujarat,188.6,31.1,0.7,0.6,13.7,28.2,1
+India,Gujarat,183.6,31.5,0.1,0.5,17.1,52.7,2
+India,Gujarat,178.6,32.5,0.2,0.3,10,16.8,1
+India,Gujarat,178.6,32.5,0.2,0.3,10,16.8,1
+India,Gujarat,190.3,36.8,3.5,7.4,17.2,42.6,2
+India,Gujarat,185.3,30,0.4,0.5,16,40.7,2
+India,Gujarat,173.6,34.7,0.2,0.3,9.9,17.6,1
+India,Gujarat,217,29.3,4.3,8.9,8.4,14.2,1
+India,Gujarat,195.3,39.7,3.9,9.2,18.2,37.6,2
+India,Gujarat,212,23.3,9.3,32,12.1,21.3,1
+India,Dadra and Nagar Haveli,173.6,34.7,0.2,0.3,9.9,17.6,1
+India,Andhra Pradesh,333.8,73,4,5.7,22.8,27.5,2
+India,Andhra Pradesh,377.2,105.9,8.4,23.4,60,65.2,3
+India,Andhra Pradesh,280.4,100.1,1.7,5.4,33.7,38.8,2
+India,Andhra Pradesh,220.3,38.3,4.7,6.4,8.2,10.8,1
+India,Andhra Pradesh,201.9,23.6,1.8,0.7,1.3,2.7,1
+India,Andhra Pradesh,267,78,1.3,1.3,23.3,27.3,2
+India,Andhra Pradesh,203.6,32.5,1.5,0.5,2.7,5.1,1
+India,Andhra Pradesh,257,74.4,2.3,5.9,16.6,19.5,2
+India,Andhra Pradesh,263.7,89.4,1.5,3.5,33.6,38,2
+India,Andhra Pradesh,183.6,30.4,1.7,1.7,1.6,3.3,1
+India,Andhra Pradesh,340.5,86.6,2.1,5.3,36.5,42.1,2
+India,Andhra Pradesh,198.6,28.3,3.9,5,4,6,1
+India,Jharkhand,247,78,2.6,10,42.9,53.6,3
+India,Jharkhand,270.4,79.4,3,5.8,42.6,51.3,3
+India,Jharkhand,220.3,66.5,0.6,3,13.8,16.8,1
+India,Jharkhand,263.7,36.1,19.4,34.3,37.8,48.1,2
+India,Jharkhand,223.6,58.7,6.9,9.8,16.2,21.5,2
+India,Jharkhand,220.3,67.2,4.7,11.3,24.4,32.2,2
+India,Jharkhand,250.3,51.5,4.5,6.9,27,36.9,2
+India,Jharkhand,273.7,68.7,3.5,5.5,28,34.4,2
+India,Jharkhand,240.3,77.3,6.8,14.8,47.4,57.4,3
+India,Jharkhand,205.3,57.9,4.2,8.5,16.4,23,2
+India,Jharkhand,467.3,111.6,2.6,9.2,64.6,76.4,3
+India,Jharkhand,380.5,101.6,2.9,6.7,46.5,58.7,3
+India,Jharkhand,267,69.4,11,23.6,66.1,78.1,4
+India,Jharkhand,240.3,78.7,1,1.7,20.5,30.1,2
+India,Jharkhand,220.3,67.2,8.7,15.7,27.4,35.2,2
+India,Jharkhand,260.4,80.8,1.5,4.8,34.7,44.8,2
+India,Chhattisgarh,207,60.8,2.6,6.4,13.4,18.1,1
+India,Jharkhand,223.6,58.7,6.9,9.8,16.2,21.5,2
+India,Uttar Pradesh,260.4,60.8,4.9,13,21.3,32.6,2
+India,Jharkhand,223.6,58.7,6.9,9.8,16.2,21.5,2
+India,Bihar,333.8,70.1,4.4,5.7,24.7,27.8,2
+India,Bihar,460.6,113,3.8,10.5,61.1,72.2,3
+India,Bihar,600.8,123,2.4,10.3,94.3,108.4,4
+India,West Bengal,514,113,2.3,7.9,71.9,81,4
+India,Bihar,350.5,65.8,5.1,5.9,26.4,32.4,2
+India,Bihar,380.5,101.6,2.9,6.7,46.5,58.7,3
+India,Maharashtra,188.6,22.5,3.5,6.7,7.2,8.9,1
+India,Bihar,363.8,80.8,4.4,5.7,27.1,31.1,2
+India,Bihar,397.2,105.9,1.2,3.1,49,55.1,3
+India,Bihar,383.9,74.4,6.6,5.7,24.4,30,2
+India,Bihar,240.3,77.3,6.8,14.8,47.4,57.4,3
+India,Jammu and Kashmir,327.1,82.3,0.5,0.4,6.3,7.8,1
+India,Bihar,480.7,124.5,3.4,8.9,64.5,75.3,3
+India,Bihar,423.9,60.1,5.7,5.8,17.8,21.6,2
+India,Bihar,407.2,69.4,5.2,8.2,19,22.8,2
+India,Bihar,640.9,58.7,9.3,9.1,55.1,63.7,3
+India,Bihar,330.5,101.6,2.5,7.5,39.7,48.2,2
+India,Bihar,567.4,57.2,13.5,16.9,52.6,63.4,3
+India,Bihar,480.7,124.5,3.4,8.9,64.5,75.3,3
+India,Bihar,337.1,64.4,5.8,6,18.9,21.8,2
+India,Orissa,310.4,98.7,2.6,14.2,65.7,74.5,4
+India,Bihar,474,62.9,13.2,17.9,39.6,47.5,2
+India,Bihar,427.3,69.4,7.7,9.7,29.4,35.8,2
+India,Bihar,417.2,44.7,5,3.7,28.7,37.5,2
+India,Bihar,460.6,105.9,6.9,15.5,53.3,63,3
+India,Bihar,460.6,105.9,6.9,15.5,53.3,63,3
+India,Bihar,640.9,58.7,9.3,9.1,55.1,63.7,3
+India,Bihar,460.6,80.8,7.1,12.2,40.7,48.4,3
+India,Bihar,377.2,86.6,3,4.3,38.6,48.3,2
+India,Bihar,460.6,80.8,7.1,12.2,40.7,48.4,3
+India,Bihar,540.7,124.5,2.6,9.1,83,95.8,4
+India,Haryana,327.1,78.7,5.7,8.2,28.6,115.8,2
+India,Haryana,640.9,147.3,10.5,57.7,153.3,180.4,5
+India,Haryana,270.4,75.8,3.5,1.7,23.8,101.2,2
+India,Haryana,253.7,71.5,2.2,2,25.4,114.6,2
+India,Haryana,207,68,1.4,2.3,34.2,164.7,2
+India,Haryana,253.7,70.1,2.2,3.9,34.4,139.3,2
+India,Haryana,263.7,73.7,2.4,2.3,25.5,106.2,2
+India,Haryana,587.5,98.7,6.4,4.5,66.1,128.5,4
+India,Haryana,230.3,68.7,2,3.4,33.9,148.5,2
+India,Haryana,277,73,3.6,2.8,27.1,104.8,2
+India,Haryana,233.7,71.5,1.8,1.4,27.7,134.9,2
+India,Haryana,203.6,60.1,1.6,3.6,33.4,151.2,2
+India,Haryana,600.8,75.1,18.7,32.4,41.2,128.1,3
+India,Haryana,201.9,58.7,2.1,5.3,32.6,145.7,2
+India,Haryana,196.9,61.5,1.4,3.5,32.5,145.1,2
+India,Haryana,237,70.1,2.1,1.3,28.4,141.3,2
+India,Haryana,230.3,67.2,1.8,1.9,29.2,134.6,2
+India,Haryana,741,123,3.9,11.6,121.1,152.7,4
+India,Chandigarh,841.1,151.6,7.8,26.9,140.2,159.9,4
+India,Goa,247,25,4.1,2.8,4.9,6.1,1
+India,Goa,247,25,4.1,2.8,4.9,6.1,1
+India,Andaman and Nicobar Islands,233.7,22.9,0.4,0.4,3.4,6,1
+India,Chhattisgarh,233.7,72.2,0.7,2.2,16.1,18.5,2
+India,Andhra Pradesh,181.9,31.5,1.1,0.5,2,3.8,1
+India,Chhattisgarh,233.7,72.2,0.7,2.2,16.1,18.5,2
+India,Chhattisgarh,233.7,72.2,0.7,2.2,16.1,18.5,2
+India,Arunachal Pradesh,198.6,80.8,0.2,0,3,3.4,1
+India,Assam,507.4,86.6,2.3,2.6,54.2,59.7,3
+India,Assam,614.2,107.3,4.6,8.8,38.7,42.4,2
+India,Assam,560.8,75.8,3,2.8,66.9,74,4
+India,Assam,467.3,42.9,3,3,20.6,22.4,2
+India,Assam,340.5,53.6,0.5,0.5,3.2,3.8,1
+India,Assam,433.9,36.5,2.2,1.9,13.9,15.4,1
+India,Assam,377.2,45.8,1,0.6,3.9,4.3,1
+India,Uttar Pradesh,474,108.7,2.1,8.1,77.2,110,4
+India,Assam,507.4,86.6,2.3,2.6,54.2,59.7,3
+India,West Bengal,417.2,83,0.3,1.2,32.7,35.4,2
+India,Maharashtra,200.3,22.4,1.3,0.5,3.7,4.5,1
+India,Assam,594.1,59.4,3.6,1.6,16.8,18.6,2
+India,Assam,377.2,45.8,1,0.6,3.9,4.3,1
+India,Assam,507.4,86.6,2.3,2.6,54.2,59.7,3
+India,Assam,1014.7,37.2,28.1,6.6,38.6,50.5,2
+India,Assam,507.4,48.6,2.5,1.3,8.4,9.9,1
+India,Assam,507.4,86.6,2.3,2.6,54.2,59.7,3
+India,Assam,454,52.2,1.1,0.6,7.5,8.5,1
+India,Andhra Pradesh,377.2,105.9,8.4,23.4,60,65.2,3
+India,Puducherry,330.5,39.7,11.5,6.6,13.2,17.9,1
+India,Puducherry,277,50.1,4.1,2.1,7,9.5,1
+India,Kerala,230.3,28.3,4.1,3.1,6.6,11.6,1
+India,Mizoram,290.4,31.8,0.9,0.1,3.9,4.1,1
+India,Mizoram,253.7,33.6,0.7,0.1,6.4,6.6,1
+India,Mizoram,253.7,33.6,0.7,0.1,6.4,6.6,1
+India,Mizoram,290.4,31.8,0.9,0.1,3.9,4.1,1
+India,Mizoram,303.8,36.1,1.1,0.7,9.5,9.9,1
+India,Mizoram,303.8,36.1,1.1,0.7,9.5,9.9,1
+India,Goa,247,25,4.1,2.8,4.9,6.1,1
+India,Manipur,373.8,51.5,8,0.8,6.2,7.4,1
+India,Manipur,240.3,56.5,0.7,0.2,3.2,4.8,1
+India,West Bengal,1161.6,134.5,26.4,42,182.7,229.6,5
+India,Manipur,277,30,0.6,0.2,2.1,2.7,1
+India,Manipur,260.4,54.4,0.5,0.2,1.9,2.9,1
+India,Manipur,260.4,54.4,0.5,0.2,1.9,2.9,1
+India,Manipur,260.4,54.4,0.5,0.2,1.9,2.9,1
+India,Manipur,260.4,54.4,0.5,0.2,1.9,2.9,1
+India,Nagaland,337.1,58.7,1.4,3.9,5.9,7.2,1
+India,Nagaland,427.3,36.5,1,0.3,6.5,7.5,1
+India,Nagaland,427.3,36.5,1,0.3,6.5,7.5,1
+India,Manipur,230.3,50.1,0.4,0.1,1.7,2.7,1
+India,Nagaland,363.8,42.6,0.7,0.7,7.8,9,1
+India,Nagaland,387.2,45.1,1.1,0.4,6.3,7.3,1
+India,Nagaland,227,58.7,0.5,0.2,1.4,2.2,1
+India,Assam,363.8,42.6,0.7,0.7,7.8,9,1
+India,Tripura,380.5,48.6,3.4,1.2,18.6,20.3,2
+India,Tripura,373.8,46.5,3,0.9,18,19.7,2
+India,Assam,400.5,31.5,1.3,1.2,11.4,12.8,1
+India,Tripura,373.8,46.5,3,0.9,18,19.7,2
+India,Tripura,373.8,46.5,3,0.9,18,19.7,2
+India,Karnataka,188.6,26.1,1.5,0.5,1,2,1
+India,Karnataka,188.6,26.1,1.5,0.5,1,2,1
+India,Chhattisgarh,200.3,64.4,0.7,6.9,24,26.1,2
+India,Chhattisgarh,247,62.9,0.7,0.7,16.9,20.8,2
+India,Chhattisgarh,317.1,71.5,4.6,14.1,37.3,42.2,2
+India,Chhattisgarh,200.3,70.1,0.8,5.5,20,21.6,2
+India,Chhattisgarh,250.3,73.7,1.9,4.4,29,33.4,2
+India,Chhattisgarh,200.3,64.4,0.7,6.9,24,26.1,2
+India,Chhattisgarh,240.3,65.8,1.4,2.9,21.8,25.3,2
+India,Uttar Pradesh,467.3,85.8,3.8,9.7,71.7,87,4
+India,Chhattisgarh,203.6,65.1,0.8,5.3,21.2,23.7,2
+India,Rajasthan,217,57.2,1,1.1,13.7,41.1,1
+India,Chhattisgarh,460.6,48.6,21.9,78.2,29.6,36.3,2
+India,Haryana,801.1,153.1,10.4,26.7,100.2,115.8,4
+India,Karnataka,201.9,44.7,1.8,0.8,3.7,6.2,1
+India,Chhattisgarh,257,70.8,1.2,2.5,20.4,26.3,2
+India,Chhattisgarh,280.4,70.8,9.5,32,32.9,37.4,2
+India,Chhattisgarh,250.3,73.7,1.9,4.4,29,33.4,2
+India,Chhattisgarh,250.3,73.7,1.9,4.4,29,33.4,2
+India,Chhattisgarh,253.7,64.4,17.3,64.9,27,31.3,2
+India,Chhattisgarh,303.8,100.1,3.5,14.5,40.4,47.2,3
+India,Chhattisgarh,207,60.8,2.6,6.4,13.4,18.1,1
+India,Chhattisgarh,257,70.8,1.2,2.5,20.4,26.3,2
+India,Chhattisgarh,280.4,70.8,9.5,32,32.9,37.4,2
+India,Uttarakhand,467.3,140.2,2.1,6.2,54.8,61.3,3
+India,Uttarakhand,410.6,77.3,3,1.7,46.6,56.6,3
+India,Uttarakhand,347.1,66.5,0.3,0.7,32.2,37.2,2
+India,Uttarakhand,150.2,90.8,0,0.1,3.2,4.2,1
+India,Uttarakhand,527.4,135.9,2.5,10.4,123.5,138.9,4
+India,Uttarakhand,474,124.5,1.4,8.6,87.7,101.1,4
+India,Uttarakhand,387.2,75.1,0.6,0.9,26.5,28.5,2
+India,Uttarakhand,353.8,94.4,0.6,1.4,19.9,22.3,2
+India,Uttarakhand,170.2,76.5,0.1,0.1,6.5,8.2,1
+India,Uttarakhand,347.1,66.5,0.3,0.7,32.2,37.2,2
+India,Uttarakhand,205.3,61.5,0.2,0.3,8.4,12,1
+India,Chhattisgarh,210.3,65.8,0.9,2.1,13.5,17.6,1
+India,Kerala,220.3,28.3,4,1.7,6.8,11.9,1
+India,Kerala,307.1,11,14.7,9.7,9.7,12.7,1
+India,Kerala,158.6,31.1,0.7,0.4,3.5,7.2,1
+India,Kerala,390.5,9.1,18.9,6.1,11,22.5,1
+India,Kerala,166.9,33.6,1,0.8,2.5,4.2,1
+India,Kerala,220.3,30.4,3.9,2.3,6.5,9.7,1
+India,Kerala,208.6,24.7,2.7,0.5,3.1,5,1
+India,Kerala,200.3,33.3,1.7,1.8,7,13.4,1
+India,Kerala,240.3,20,7.2,6.3,6.2,9,1
+India,Kerala,240.3,19.9,5.7,4.6,6.5,10.4,1
+India,Kerala,310.4,17.4,8.3,5.7,12.6,19.9,1
+India,Kerala,240.3,30.4,5.9,4.5,4.1,7.4,1
+India,Kerala,277,25.8,6.5,6.3,7.7,12.6,1
+India,Lakshadweep,170.2,36.8,0.1,0.3,4.5,11.7,1
+India,Orissa,370.5,93,1.7,6.8,50.2,55.1,3
+India,Orissa,370.5,93,1.7,6.8,50.2,55.1,3
+India,Orissa,370.5,93,1.7,6.8,50.2,55.1,3
+India,Orissa,370.5,93,1.7,6.8,50.2,55.1,3
+India,West Bengal,370.5,74.4,5.9,6.4,28.6,39.1,2
+India,West Bengal,330.5,84.4,15.8,39.1,35.9,47.4,2
+India,West Bengal,1161.6,134.5,26.4,42,182.7,229.6,5
+India,West Bengal,400.5,118.7,5.7,19.1,60.9,71.1,3
+India,West Bengal,427.3,91.6,0.8,1,22.4,23.4,2
+India,West Bengal,600.8,88.7,2.9,3,60,64.7,3
+India,West Bengal,627.5,85.8,14.9,43.9,141,159.9,4
+India,West Bengal,1161.6,134.5,26.4,42,182.7,229.6,5
+India,West Bengal,320.4,80.8,8.6,17.4,32.7,42.8,2
+India,West Bengal,343.8,77.3,8.3,21.7,72.7,88.8,4
+India,West Bengal,500.7,45.4,21.1,65.8,69.4,83.1,4
+India,West Bengal,587.5,89.4,4.2,1.9,47.7,52.4,3
+India,West Bengal,627.5,85.8,14.9,43.9,141,159.9,4
+India,West Bengal,881.2,105.9,16.5,33.9,185.5,208.2,5
+India,Punjab,567.4,123,3.2,2.1,39.1,44.5,2
+India,Punjab,567.4,123,3.2,2.1,39.1,44.5,2
+India,Punjab,660.9,114.4,3.8,7.4,96,132.6,4
+India,Punjab,774.4,137.3,7.7,14.3,81.9,102.2,4
+India,Punjab,634.2,128.8,2.2,4.8,86.4,112,4
+India,Punjab,594.1,95.8,2.5,6.2,101.1,130,4
+India,Punjab,560.8,88,6.6,3,70.3,135.9,4
+India,Punjab,217,70.1,2.7,7,32,132.1,2
+India,Punjab,707.6,137.3,5.3,16.5,79.8,98.8,4
+India,Punjab,534.1,108.7,3.7,3.9,86.6,127.4,4
+India,Punjab,948,151.6,11.8,42.9,187.3,211.6,5
+India,Punjab,867.8,158.8,5.7,10.1,122.4,149.4,4
+India,Punjab,534.1,103,3.7,6.7,91.3,151,4
+India,Punjab,534.1,110.2,2.9,3.4,91.2,131.6,4
+India,Punjab,614.2,130.2,3.3,3.7,60.9,69.9,3
+India,Punjab,801.1,153.1,10.4,26.7,100.2,115.8,4
+India,Punjab,634.2,105.9,5.4,4.1,79.9,104.5,4
+India,Punjab,423.9,86.6,2.6,3.2,65.7,151.8,4
+India,Punjab,494,88,2.7,3,71.2,131.2,4
+India,Chhattisgarh,210.3,65.8,0.9,2.1,13.5,17.6,1
+India,Karnataka,205.3,19,3.4,0.5,1.3,2.5,1
+India,Karnataka,220.3,15.2,5.5,2,1.4,2.7,1
+India,Karnataka,208.6,29,2.2,0.8,2.8,5.2,1
+India,Karnataka,181.9,20.4,1.5,1.3,1.9,3.1,1
+India,Karnataka,195.3,22.5,2.3,1.2,1.5,2.3,1
+India,Karnataka,181.9,27.5,1.6,0.3,1.1,1.7,1
+India,Karnataka,198.6,35.1,1.9,0.5,2.5,5.1,1
+India,Karnataka,205.3,29.7,2,1,1.7,3.5,1
+India,Karnataka,200.3,25.4,2.9,0.4,1.1,2.3,1
+India,Karnataka,230.3,33.3,2.3,0.9,5.4,7.7,1
+India,Karnataka,223.6,23.3,3.7,2.3,2.9,5.3,1
+India,Karnataka,190.3,27.9,2.6,0.4,1,1.7,1
+India,Karnataka,175.2,31.5,0.2,0.4,5.1,7.1,1
+India,Karnataka,200.3,29,2.8,1.6,1.7,2.9,1
+India,Karnataka,178.6,24.3,1.2,0.3,0.9,1.6,1
+India,Karnataka,176.9,26.1,1.4,0.2,1.6,2.4,1
+India,Karnataka,193.6,20.4,8.4,30.3,2.4,4.8,1
+India,Karnataka,210.3,18.6,3.3,0.9,1.4,2.8,1
+India,Karnataka,180.2,24.3,1.1,0.4,0.8,1.8,1
+India,Karnataka,180.2,25.8,1.2,0.3,1.2,2,1
+India,Karnataka,191.9,29.7,2.1,0.6,1.3,2.4,1
+India,Karnataka,210.3,18.6,3.3,0.9,1.4,2.8,1
+India,Maharashtra,240.3,43.3,2.5,2.3,13.8,16.7,1
+India,Maharashtra,180.2,30.8,0.7,0.5,2.2,3.9,1
+India,Maharashtra,207,28.6,1.7,0.4,2.1,3.6,1
+India,Maharashtra,200.3,27.5,1.7,0.9,2.8,5.7,1
+India,Maharashtra,220.3,30,2.6,1.6,5.3,7.7,1
+India,Maharashtra,193.6,25.8,1.4,0.7,1.7,3.1,1
+India,Maharashtra,270.4,29.3,12.3,45.8,30.7,38,2
+India,Maharashtra,220.3,26.8,5,12.6,9.1,11.7,1
+India,Maharashtra,297.1,39,3.8,2.5,14,17.1,1
+India,Maharashtra,230.3,27.9,4,8,13.4,18.6,1
+India,Maharashtra,313.8,31.1,5.2,2.8,15.4,18.7,1
+India,Maharashtra,207,27.2,1.8,0.9,4.3,6.1,1
+India,Maharashtra,173.6,23.3,0.8,0.2,1.9,2.6,1
+India,Maharashtra,195.3,24,2.5,0.8,2.4,4.1,1
+India,Maharashtra,240.3,43.3,2.5,2.3,13.8,16.7,1
+India,Maharashtra,213.6,28.3,3.4,5.3,4.6,6.9,1
+India,Maharashtra,223.6,40.4,1.2,0.9,6.1,9.7,1
+India,Maharashtra,237,32.2,4.3,5,9.3,12.6,1
+India,Maharashtra,170.2,30.4,0.4,0.3,2.5,3.4,1
+India,Maharashtra,247,45.8,3,4.3,14.6,19.8,1
+India,Maharashtra,217,25.8,2,0.8,4.9,6.7,1
+India,Maharashtra,212,24.3,4.5,11.7,8.4,10.5,1
+India,Maharashtra,250.3,83.7,3.6,16.5,39,47.9,2
+India,Maharashtra,196.9,31.5,0.9,0.6,2.4,4,1
+India,Maharashtra,213.6,29.7,2.9,4.4,6.7,8.3,1
+India,Maharashtra,313.8,28.3,9.3,16.7,18.4,37.4,2
+India,Maharashtra,212,30.4,3.9,5.3,12.8,27.2,1
+India,Maharashtra,330.5,22.4,12.5,18.8,16.3,23.7,2
+India,Maharashtra,330.5,22.4,12.5,18.8,16.3,23.7,2
+India,Maharashtra,287.1,62.2,4.1,8.6,26,31.8,2
+India,Orissa,370.5,93,1.7,6.8,50.2,55.1,3
+India,Orissa,397.2,90.8,2.5,10.7,68.1,73.8,4
+India,Orissa,200.3,66.5,0.5,5.4,20.2,22.3,2
+India,Orissa,297.1,97.3,3.9,16.2,43.9,53.6,3
+India,Orissa,397.2,63.7,20.1,38.6,56.4,65,3
+India,Orissa,433.9,79.4,3.5,8.9,58.3,65.2,3
+India,Orissa,310.4,88,3.3,11.1,64.1,69.8,3
+India,Chhattisgarh,200.3,70.1,0.8,5.5,20,21.6,2
+India,Orissa,350.5,97.3,2.1,11.4,105.5,112.7,4
+India,Orissa,367.2,104.4,3.6,14.3,49.7,58,3
+India,Orissa,343.8,65.8,14.6,37.2,54.7,63.8,3
+India,Orissa,257,66.5,0.9,2.4,26.2,30.1,2
+India,Orissa,343.8,65.8,14.6,37.2,54.7,63.8,3
+India,Orissa,397.2,90.8,2.5,10.7,68.1,73.8,4
+India,Orissa,407.2,85.1,8.1,20.7,59.4,69.2,3
+India,Orissa,250.3,78.7,0.9,2.5,27.3,31.2,2
+India,Orissa,300.4,91.6,1.5,4.1,39.2,44.7,2
+India,Orissa,273.7,86.6,2.3,10.1,83.8,88.6,4
+India,Orissa,240.3,88,1.1,4,28.9,32.6,2
+India,Orissa,205.3,67.2,0.8,1.7,9.9,11.5,1
+India,Orissa,263.7,66.5,1.5,3.6,33.3,37.5,2
+India,Rajasthan,198.6,60.1,1.2,1.2,32.8,160.2,2
+India,Rajasthan,181.9,40.1,0.3,0.1,9.7,40,1
+India,Rajasthan,193.6,52.9,0.8,0.7,27.1,127.5,2
+India,Rajasthan,200.3,48.6,7.5,22.7,31.7,137.2,2
+India,Rajasthan,185.3,44,0.7,0.5,13.3,46,1
+India,Rajasthan,180.2,33.3,0.7,0.8,9.3,22.8,1
+India,Rajasthan,227,59.4,1.5,0.7,38.4,177.2,2
+India,Rajasthan,196.9,36.8,1.4,1.2,10.1,19.9,1
+India,Rajasthan,188.6,64.4,1,2.1,29.6,139.6,2
+India,Rajasthan,181.9,51.5,0.8,2,17,74.8,2
+India,Rajasthan,247,31.5,2.8,4.4,13.5,17.1,1
+India,Rajasthan,198.6,38.6,0.9,0.6,4.6,8.2,1
+India,Rajasthan,203.6,53.6,1.1,0.7,6.3,14.9,1
+India,Rajasthan,205.3,52.9,0.9,0.8,7.5,15.4,1
+India,Rajasthan,273.7,58.7,3.3,7,20.9,77.9,2
+India,Rajasthan,220.3,48.6,3.7,13.1,10.2,18.8,1
+India,Rajasthan,185.3,35.8,0.9,0.3,8.9,14.6,1
+India,Rajasthan,183.6,27.5,1.4,1.7,6.4,8.9,1
+India,Rajasthan,195.3,42.9,1,1.2,6.1,15.5,1
+India,Rajasthan,277,75.8,3.1,2.2,21.5,58.9,2
+India,Rajasthan,213.6,24.7,2.2,2.9,9.5,13.4,1
+India,Rajasthan,200.3,33.6,1.9,1.7,6.3,9.5,1
+India,Rajasthan,195.3,55.1,0.9,0.9,31.6,151.8,2
+India,Rajasthan,190.3,33.6,1.3,0.9,8.8,12.5,1
+India,Rajasthan,223.6,59.4,1.9,0.9,20.8,93.6,2
+India,Rajasthan,190.3,33.6,1.3,0.9,8.8,12.5,1
+India,Tamil Nadu,270.4,42.6,5.4,3.5,9.2,13.2,1
+India,Tamil Nadu,270.4,35.1,3.7,0.8,4.4,6.4,1
+India,Tamil Nadu,263.7,36.1,5.7,4.5,6.8,10.2,1
+India,Tamil Nadu,223.6,28.3,3.1,1.8,3.1,5.2,1
+India,Tamil Nadu,247,40.4,5.4,1.9,5.4,6.6,1
+India,Tamil Nadu,188.6,30,1.7,0.6,1,1.9,1
+India,Tamil Nadu,297.1,36.5,9.1,9.1,8.9,13.1,1
+India,Tamil Nadu,257,40.4,4.2,1.8,8.1,11.9,1
+India,Tamil Nadu,300.4,36.8,6.6,5.3,10.6,14.3,1
+India,Tamil Nadu,205.3,30.4,2.5,2.7,2.4,4.1,1
+India,Tamil Nadu,247,35.8,3.8,2,2.5,3.9,1
+India,Tamil Nadu,257,40.4,4.2,1.8,8.1,11.9,1
+India,Tamil Nadu,183.6,22.4,1.8,0.5,1.3,3.1,1
+India,Tamil Nadu,230.3,41.5,3,1.8,4.7,6.8,1
+India,Tamil Nadu,287.1,19.3,7.5,4.8,3.5,5.8,1
+India,Tamil Nadu,263.7,34.7,5.3,3.5,5.8,8.7,1
+India,Uttar Pradesh,433.9,114.4,3.5,9.3,51.1,81.4,3
+India,Uttar Pradesh,514,120.2,4.3,13.2,87.8,141.7,4
+India,Uttar Pradesh,487.3,105.9,4.5,9.2,64.1,96.7,3
+India,Chhattisgarh,210.3,65.8,0.9,2.1,13.5,17.6,1
+India,Uttar Pradesh,413.9,93,4.4,13.1,68.3,95.5,4
+India,Uttar Pradesh,480.7,101.6,8.5,16,44.3,122.7,3
+India,Uttar Pradesh,373.8,93,7.1,19.8,41.7,57.3,3
+India,Uttar Pradesh,694.3,115.9,9.7,9.8,62.4,128.1,3
+India,Uttar Pradesh,300.4,77.3,3,2.1,21.2,55.5,2
+India,Uttar Pradesh,454,63.7,19.9,46.3,35.2,101.8,2
+India,Uttar Pradesh,734.3,120.2,5.1,8.5,105.4,145.7,4
+India,Uttar Pradesh,263.7,73.7,2.4,2.3,25.5,106.2,2
+India,Uttar Pradesh,474,108.7,2.1,8.1,77.2,110,4
+India,Uttar Pradesh,440.6,124.5,6.4,23.1,60.5,80.7,3
+India,Uttar Pradesh,707.6,137.3,6.5,20.7,134.4,172.9,4
+India,Uttar Pradesh,267,70.8,2.2,2.3,18.8,54,2
+India,Uttar Pradesh,357.2,83.7,3.9,8.5,29.1,50,2
+India,Uttar Pradesh,357.2,93,2.9,4.9,31.2,43.6,2
+India,West Bengal,2296.5,80.1,87.7,145,227,256.8,5
+India,Uttar Pradesh,487.3,101.6,3,7.1,62.4,88.6,3
+India,Uttar Pradesh,363.8,90.1,2.9,4.5,31.2,46.5,2
+India,Uttar Pradesh,357.2,93,2.9,4.9,31.2,43.6,2
+India,Uttar Pradesh,667.6,103,2.5,9.7,108.4,137.1,4
+India,Uttar Pradesh,377.2,91.6,4.5,9.1,32.2,53.1,2
+India,Chhattisgarh,210.3,65.8,0.9,2.1,13.5,17.6,1
+India,Uttar Pradesh,383.9,90.8,5.3,10.5,32.1,54.5,2
+India,Uttar Pradesh,383.9,100.1,2.1,6.3,49.7,69.5,3
+India,Uttar Pradesh,410.6,88,2.1,3.6,43.8,59.3,3
+India,Haryana,208.6,60.8,1.9,3.8,34,151.2,2
+India,Uttar Pradesh,333.8,89.4,2.2,3.4,26.4,37.3,2
+India,Uttar Pradesh,397.2,90.8,2.4,5.1,46.4,66.2,3
+India,Uttar Pradesh,383.9,97.3,2,5.5,41,64.7,3
+India,Chhattisgarh,210.3,65.8,0.9,2.1,13.5,17.6,1
+India,Bihar,360.5,83.7,3.4,6.8,36.2,43.3,2
+India,Orissa,347.1,82.3,15.1,44.4,63.3,71.1,3
+India,Uttar Pradesh,283.7,74.4,1.5,3.3,22.5,30.9,2
+India,Uttar Pradesh,283.7,74.4,1.8,2.2,21.6,32.4,2
+India,Gujarat,237,32.5,4.3,5,10.9,17.1,1
+India,Uttar Pradesh,250.3,72.2,1.3,2,20,29.2,2
+India,Uttar Pradesh,460.6,100.1,7.2,14.5,48.9,62.5,3
+India,Uttar Pradesh,403.9,95.8,2.6,6.7,52.7,70.7,3
+India,Orissa,347.1,82.3,15.1,44.4,63.3,71.1,3
+India,Uttar Pradesh,350.5,104.4,3,13.5,54.1,68.3,3
+India,Uttar Pradesh,363.8,91.6,2.7,5,31.7,44.9,2
+India,Uttar Pradesh,250.3,82.3,1.9,8.6,30.4,38.5,2
+India,Uttar Pradesh,283.7,74.4,1.5,3.3,22.5,30.9,2
+India,Uttar Pradesh,460.6,60.8,6.3,8.4,28.3,36.3,2
+India,Uttar Pradesh,317.1,88,2.7,4.8,30.1,39.5,2
+India,Rajasthan,654.2,123,5.1,10.6,98.1,156.2,4
+India,Uttar Pradesh,433.9,95.8,4.8,8.6,52.1,65.7,3
+India,Uttar Pradesh,347.1,103,2.8,10.5,49.4,59.5,3
+India,Uttar Pradesh,474,108.7,2.1,8.1,77.2,110,4
+India,Uttar Pradesh,467.3,93,9.1,17.2,39.5,125.1,2
+India,Uttar Pradesh,413.9,105.9,6,19.3,57,104.9,3
+India,Bihar,350.5,65.8,5.1,5.9,26.4,32.4,2
+India,Uttar Pradesh,487.3,130.2,4,17.2,99.2,143.9,4
+India,Uttar Pradesh,287.1,76.5,2.2,2.1,19.9,31.8,2
+India,Uttar Pradesh,337.1,80.8,4.6,8.6,25.8,51.8,2
+India,Tamil Nadu,267,39,4.9,2.2,5.1,9.3,1
+India,Tamil Nadu,205.3,28.6,2.5,0.6,2,3.9,1
+India,Tamil Nadu,201.9,23.6,1.8,0.7,1.3,2.7,1
+India,Tamil Nadu,280.4,41.8,7.7,6.1,5.9,10.9,1
+India,Tamil Nadu,297.1,36.1,14.2,19.1,10.3,14.4,1
+India,Tamil Nadu,217,30.4,2.7,1,2,3.9,1
+India,Tamil Nadu,233.7,26.8,5.9,3.9,2.6,3.8,1
+India,Uttar Pradesh,300.4,80.1,1.8,6.3,29.7,38.2,2
+India,Uttar Pradesh,460.6,100.1,7.2,14.5,48.9,62.5,3
+India,Uttar Pradesh,243.7,87.3,2,8.5,30.1,43.3,2
+India,Uttar Pradesh,250.3,78.7,1.6,5.1,26.2,34,2
+India,Uttar Pradesh,247,70.1,1.2,2.7,22.8,33.9,2
+India,Uttar Pradesh,413.9,103,4.7,9.7,51.7,65.8,3
+India,Tamil Nadu,250.3,21.6,5.7,3.7,3.1,5.1,1
+India,Tamil Nadu,230.3,36.1,3.2,1,3.9,6.3,1
+India,Tamil Nadu,614.2,3.9,15.4,12.4,27.1,41,2
+India,Rajasthan,240.3,45.8,2,2,9.4,13.1,1
+India,Rajasthan,227,57.9,1.8,1.2,23.9,118.3,2
+India,Rajasthan,253.7,55.8,4.8,15.7,19.5,32.9,2
+India,Rajasthan,247,69.4,1.6,1.2,17.2,40.1,2
+India,Rajasthan,213.6,62.9,1,1.1,10.3,21.1,1
+India,Rajasthan,208.6,32.9,1.9,2.8,8,10.8,1
+India,Rajasthan,230.3,62.2,1.3,1.1,15.1,36.9,1
+India,Andhra Pradesh,230.3,52.2,1.4,2,9.9,12,1
+India,Andhra Pradesh,223.6,73.7,2,8.7,24.5,28.5,2
+India,Andhra Pradesh,283.7,52.9,2.1,2.7,18,20.8,2
+India,Andhra Pradesh,280.4,40.4,3,3,16.3,19.2,2
+India,Andhra Pradesh,250.3,56.5,1.8,3.6,15.8,18.1,2
+India,Andhra Pradesh,283.7,79.4,2.4,4.8,21.7,24.6,2
+India,Andhra Pradesh,247,45.1,1.6,2.2,16.9,21.4,2
+India,Andhra Pradesh,277,47.2,1.7,1.9,20.1,23.6,2
+India,Andhra Pradesh,273.7,52.9,1.4,2.2,17.4,20.1,2
+India,Andhra Pradesh,283.7,65.1,6.4,17.9,25.6,30.5,2
+India,Andhra Pradesh,250.3,56.5,1.8,3.6,15.8,18.1,2
+India,Andhra Pradesh,267,68.7,1.5,2.3,21.9,25.1,2
+India,Andhra Pradesh,263.7,70.1,1.5,3.9,22.9,25.8,2
+India,Andhra Pradesh,263.7,70.1,1.5,3.9,22.9,25.8,2
+India,Andhra Pradesh,250.3,70.8,1.3,2.2,17.2,19.7,2
+India,Andhra Pradesh,230.3,41.1,2.1,2.1,7.7,10.1,1
+India,Andhra Pradesh,220.3,30,2.1,1,4,6.1,1
+India,Andhra Pradesh,205.3,30,1.7,0.5,2.6,4.9,1
+India,Arunachal Pradesh,267,53.6,0.3,0.2,2,2.3,1
+India,Chhattisgarh,233.7,72.2,0.7,2.2,16.1,18.5,2
+India,Assam,507.4,48.6,2.5,1.3,8.4,9.9,1
+India,West Bengal,807.8,113,11.8,19.1,140.4,159.7,4
+India,Assam,774.4,62.2,8,7,36.1,40.5,2
+India,Assam,560.8,75.8,3,2.8,66.9,74,4
+India,Madhya Pradesh,223.6,35.1,2.6,3.7,10.7,14.8,1
+India,Manipur,317.1,52.9,1.2,1.2,3.9,5.1,1
+India,Assam,614.2,107.3,4.6,8.8,38.7,42.4,2
+India,Delhi,327.1,78.7,5.7,8.2,28.6,115.8,2
+India,Andhra Pradesh,377.2,105.9,8.4,23.4,60,65.2,3
+India,West Bengal,1161.6,134.5,26.4,42,182.7,229.6,5
+India,West Bengal,1161.6,134.5,26.4,42,182.7,229.6,5
+India,Assam,560.8,75.8,3,2.8,66.9,74,4
+India,Assam,614.2,107.3,4.6,8.8,38.7,42.4,2
+India,Delhi,407.2,83,8.1,14,33.2,117.8,2
+India,West Bengal,403.9,66.5,11.8,30.5,98.8,117,4
+India,West Bengal,320.4,80.8,8.6,17.4,32.7,42.8,2
+India,Andhra Pradesh,208.6,29,2.2,0.8,2.8,5.2,1
+India,Uttar Pradesh,467.3,93,9.1,17.2,39.5,125.1,2
+India,Chhattisgarh,233.7,72.2,0.7,2.2,16.1,18.5,2
+India,Mizoram,303.8,36.1,1.1,0.7,9.5,9.9,1
+India,Tamil Nadu,207,24,2.2,0.9,1.4,3,1
+India,Tamil Nadu,195.3,24.7,2.7,1.2,2.9,4,1
+India,Maharashtra,227,23.6,4.5,7.6,8,10.4,1
