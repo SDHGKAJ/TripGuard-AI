@@ -273,15 +273,14 @@ def build_master_df(root: Path) -> pd.DataFrame:
 def train_risk_model(master_df):
     """Train a simple LinearRegression on the merged master_df and return (model, features)"""
     features = ['air_quality_PM2.5', 'air_quality_PM10', 'total_accidents', 'total_crimes']
+    # include safety_index if present
+    if 'safety_index' in master_df.columns:
+        features = features + ['safety_index']
+    
     target = 'risk_score'
     X = master_df[features]
     y = master_df[target]
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    model = LinearRegression()
-    model.fit(X_train, y_train)
-    # include safety_index if present
-    if 'safety_index' in master_df.columns and 'safety_index' not in features:
-        features = features + ['safety_index']
     model = LinearRegression()
     model.fit(X_train, y_train)
     return model, features
