@@ -247,40 +247,37 @@ def build_master_df(root: Path) -> pd.DataFrame:
     """
     try:
         # --- Air ---
-        air_cols_to_read = ['region', 'air_quality_PM2.5', 'air_quality_PM10']
         air_path = find_file(root, 'Air_Quality_Index.csv')
         if air_path is None:
             logger.error('Air_Quality_Index.csv not found in project root or Datasets/.')
             raise FileNotFoundError('Air_Quality_Index.csv not found')
-        df_air_raw = pd.read_csv(air_path, usecols=[c for c in air_cols_to_read if c in pd.read_csv(air_path, nrows=0).columns])
-        df_air_raw['region'] = df_air_raw['region'].str.upper().str.strip()
-        name_corrections = {
-            'ANDAMAN AND NICOBAR ISLANDS': 'A & N ISLANDS',
-            'DADRA AND NAGAR HAVELI': 'D & N HAVELI',
-            'DAMAN AND DIU': 'DAMAN & DIU'
-        }
-        df_air_raw['region'] = df_air_raw['region'].replace(name_corrections)
-        df_air = df_air_raw.groupby('region').mean().reset_index()
-        df_air['region'] = df_air['region'].str.upper()
+        
+        # Read air quality data and calculate regional averages
+        df_air = pd.read_csv(air_path)
+        df_air['region'] = df_air['region'].str.upper().str.strip()
+        df_air = df_air.groupby('region')[['air_quality_PM2.5', 'air_quality_PM10']].mean().reset_index()
+        
+        # Normalize air quality metrics (higher is better)
+        df_air['air_quality_PM2.5'] = 1 - (df_air['air_quality_PM2.5'] / df_air['air_quality_PM2.5'].max())
+        df_air['air_quality_PM10'] = 1 - (df_air['air_quality_PM10'] / df_air['air_quality_PM10'].max())
 
         # --- Road ---
         road_path = find_file(root, 'Road_Condition_Compressed.csv')
         if road_path is None:
             logger.error('Road_Condition_Compressed.csv not found in project root or Datasets/.')
             raise FileNotFoundError('Road_Condition_Compressed.csv not found')
-        csv_road = pd.read_csv(road_path)
-        # rename as in notebook
-        if 'State/ UT' in csv_road.columns:
-            csv_road.rename(columns={'State/ UT': 'region'}, inplace=True)
-        # try to compute total_accidents using known columns (best-effort)
-        acc_cols = [c for c in csv_road.columns if 'Accident' in c and '2014' in c]
-        if acc_cols and len(acc_cols) >= 2:
-            csv_road['total_accidents'] = csv_road[acc_cols].sum(axis=1)
-        else:
-            # fallback: numeric sum of numeric columns
-            numcols = csv_road.select_dtypes(include='number').columns
-            csv_road['total_accidents'] = csv_road[numcols].sum(axis=1)
-        df_road = csv_road[['region', 'total_accidents']].copy()
+            
+        # Read road condition data
+        df_road = pd.read_csv(road_path)
+        df_road.rename(columns={'State/ UT': 'region'}, inplace=True)
+        
+        # Calculate total accidents from accident columns
+        accident_cols = [col for col in df_road.columns if 'Accident' in col]
+        df_road['total_accidents'] = df_road[accident_cols].sum(axis=1)
+        
+        # Normalize accident score (higher is better = fewer accidents)
+        df_road['total_accidents'] = 1 - (df_road['total_accidents'] / df_road['total_accidents'].max())
+        df_road = df_road[['region', 'total_accidents']].copy()
         df_road['region'] = df_road['region'].str.upper().str.strip()
 
         # --- Crime ---
@@ -288,79 +285,75 @@ def build_master_df(root: Path) -> pd.DataFrame:
         if crime_path is None:
             logger.error('crime_filtered.csv not found in project root or Datasets/.')
             raise FileNotFoundError('crime_filtered.csv not found')
-        csv_crime = pd.read_csv(crime_path)
-        csv_crime['state_ut'] = csv_crime['state_ut'].str.upper()
-        name_corrections = {
-            'UTTARAKHAND': 'UTTARAKHAND',
-            'UTTARPRADESH': 'UTTAR PRADESH'
+            
+        # Read crime data and map cities to states
+        df_crime = pd.read_csv(crime_path)
+        city_to_state = {
+            'CHENNAI': 'TAMIL NADU',
+            'MUMBAI': 'MAHARASHTRA',
+            'DELHI': 'DELHI',
+            'BANGALORE': 'KARNATAKA',
+            'KOLKATA': 'WEST BENGAL',
+            'HYDERABAD': 'TELANGANA',
+            'AHMEDABAD': 'GUJARAT',
+            'PUNE': 'MAHARASHTRA',
+            'SURAT': 'GUJARAT',
+            'JAIPUR': 'RAJASTHAN',
+            'LUCKNOW': 'UTTAR PRADESH',
+            'KANPUR': 'UTTAR PRADESH',
+            'NAGPUR': 'MAHARASHTRA',
+            'INDORE': 'MADHYA PRADESH',
+            'THANE': 'MAHARASHTRA',
+            'BHOPAL': 'MADHYA PRADESH',
+            'PATNA': 'BIHAR',
+            'VADODARA': 'GUJARAT',
+            'LUDHIANA': 'PUNJAB',
+            'AGRA': 'UTTAR PRADESH'
         }
-        csv_crime['state_ut'] = csv_crime['state_ut'].replace(name_corrections)
-        crime_cols = [
-            '01_District_wise_crimes_committed_IPC_2001_2012_total_ipc_crimes',
-            '01_District_wise_crimes_committed_IPC_2013_total_ipc_crimes'
-        ]
-        for c in crime_cols:
-            if c not in csv_crime.columns:
-                csv_crime[c] = 0
-        csv_crime[crime_cols] = csv_crime[crime_cols].fillna(0)
-        df_maxes = csv_crime.groupby('state_ut')[crime_cols].max().reset_index()
-        df_maxes['total_crimes'] = df_maxes[crime_cols[0]] + df_maxes[crime_cols[1]]
-        df_crime_agg = df_maxes[['state_ut', 'total_crimes']].copy()
-        df_crime_agg.rename(columns={'state_ut': 'region'}, inplace=True)
-        df_crime_agg['region'] = df_crime_agg['region'].str.upper().str.strip()
+        
+        df_crime['region'] = df_crime['City'].str.upper().map(city_to_state)
+        df_crime = df_crime[df_crime['region'].notna()]  # Remove unmapped cities
+        
+        # Count crimes by region
+        crime_counts = df_crime.groupby('region').size().reset_index(name='total_crimes')
+        
+        # Normalize crime score (higher is better = fewer crimes)
+        crime_counts['total_crimes'] = 1 - (crime_counts['total_crimes'] / crime_counts['total_crimes'].max())
+        df_crime_agg = crime_counts.copy()
 
         # --- Merge ---
-        master_df = pd.merge(df_air, df_road, on='region')
-        master_df = pd.merge(master_df, df_crime_agg, on='region')
-
-        # --- Optional: Safety dataset ---
-        # detect any CSV with 'safety' in the filename (case-insensitive)
-        safety_files = [p for p in root.glob('*.csv') if 'safety' in p.name.lower()]
-        if safety_files:
-            # pick the first match
-            sf = safety_files[0]
-            try:
-                df_safety = pd.read_csv(sf)
-                # try to find a region column and a numeric safety column
-                col_candidates = [c for c in df_safety.columns if 'region' in c.lower()]
-                if col_candidates:
-                    region_col = col_candidates[0]
-                    df_safety.rename(columns={region_col: 'region'}, inplace=True)
-                    df_safety['region'] = df_safety['region'].str.upper().str.strip()
-                    # pick first numeric column as safety index (excluding region)
-                    numeric_cols = df_safety.select_dtypes(include='number').columns.tolist()
-                    if numeric_cols:
-                        safety_col = numeric_cols[0]
-                        df_safety = df_safety[['region', safety_col]].rename(columns={safety_col: 'safety_index'})
-                        master_df = pd.merge(master_df, df_safety, on='region', how='left')
-                        # fill missing safety_index with mean
-                        master_df['safety_index'] = master_df['safety_index'].fillna(master_df['safety_index'].mean())
-                        logger.info(f"Merged safety dataset {sf.name} using column {safety_col}")
-                    else:
-                        logger.warning(f"Found safety file {sf.name} but no numeric columns to use as safety index")
-                else:
-                    logger.warning(f"Found safety file {sf.name} but no region-like column")
-            except Exception:
-                logger.exception(f"Failed to read/merge safety file {sf}")
-
-        # --- Scores ---
+        master_df = pd.merge(df_air, df_road, on='region', how='outer')
+        master_df = pd.merge(master_df, df_crime_agg, on='region', how='outer')
+        
+        # Fill missing values with means
+        for col in ['air_quality_PM2.5', 'air_quality_PM10', 'total_accidents', 'total_crimes']:
+            if col in master_df.columns:
+                master_df[col] = master_df[col].fillna(master_df[col].mean())
+        
+        # --- Compute Risk Score ---
         weights = {
             'air_quality': 0.4,
-            'total_accidents': 0.3,
-            'total_crimes': 0.3
+            'accidents': 0.3,
+            'crimes': 0.3
         }
-        master_df['N_PM2_5'] = (master_df['air_quality_PM2.5'] / 30).clip(upper=1)
-        master_df['N_PM10'] = (master_df['air_quality_PM10'] / 50).clip(upper=1)
-        master_df['PollutionIndex'] = 0.6 * master_df['N_PM2_5'] + 0.4 * master_df['N_PM10']
-        master_df['air_safety_score'] = (1 - master_df['PollutionIndex']) * 100
-        total_accidents_sum = master_df['total_accidents'].sum()
-        master_df['road_score'] = (1 - (master_df['total_accidents'] / total_accidents_sum)) * 100
-        total_crimes_sum = master_df['total_crimes'].sum()
-        master_df['crime_score'] = (1 - (master_df['total_crimes'] / total_crimes_sum)) * 100
+        
+        # Air quality score (already normalized, higher is better)
+        master_df['air_score'] = (
+            master_df['air_quality_PM2.5'] * 0.6 + 
+            master_df['air_quality_PM10'] * 0.4
+        ) * 100
+        
+        # Road safety score (already normalized, higher is better)
+        master_df['road_score'] = master_df['total_accidents'] * 100
+        
+        # Crime safety score (already normalized, higher is better)
+        master_df['crime_score'] = master_df['total_crimes'] * 100
+        
+        # Final risk score (0-100, higher is better)
         master_df['risk_score'] = (
-            (master_df['air_safety_score'] * weights['air_quality']) +
-            (master_df['road_score'] * weights['total_accidents']) +
-            (master_df['crime_score'] * weights['total_crimes'])
+            master_df['air_score'] * weights['air_quality'] +
+            master_df['road_score'] * weights['accidents'] +
+            master_df['crime_score'] * weights['crimes']
         )
 
         return master_df
