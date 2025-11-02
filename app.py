@@ -1,8 +1,14 @@
 import logging
-import streamlit as st
+try:
+    import streamlit as st
+    STREAMLIT_AVAILABLE = True
+except Exception:
+    STREAMLIT_AVAILABLE = False
+    st = None
 import pandas as pd
 from pathlib import Path
 import difflib
+from weather import get_5day_forecast
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
@@ -47,8 +53,13 @@ def load_csv(path: Path) -> pd.DataFrame:
 
 
 def main():
+    if not STREAMLIT_AVAILABLE:
+        logger.info("Streamlit not available; launching CLI fallback")
+        run_cli_fallback()
+        return
+
     st.set_page_config(page_title="TripGuard-AI — Data UI", layout="wide")
-    st.title("TripGuard-AI — Simple Data UI")
+    st.title("TripGuard-AI Main page")
 
     st.sidebar.header("Data selector")
     csv_files = list_csvs(ROOT)
@@ -137,9 +148,97 @@ def main():
                     st.write("Model features used:")
                     st.write(X_row)
 
+                    # Add weather forecast section
+                    st.markdown("---")
+                    st.subheader("5-Day Weather Forecast")
+                    forecasts = get_5day_forecast(place)
+                    
+                    if len(forecasts) == 1 and "error" in forecasts[0]:
+                        st.warning(forecasts[0]["error"])
+                    else:
+                        cols = st.columns(5)
+                        for idx, forecast in enumerate(forecasts):
+                            with cols[idx]:
+                                st.markdown(f"**{forecast['date']}**")
+                                st.markdown(f"🌡️ {forecast['temp_min']}°C - {forecast['temp_max']}°C")
+                                st.markdown(f"💧 {forecast['humidity']}% humidity")
+                                st.markdown(f"🌤️ {forecast['description']}")
+                                st.markdown(f"💨 {forecast['wind_speed']} km/h")
+
         except Exception as e:
             st.error(f"Failed to get place data: {e}")
             logger.exception("Failed to get place data")
+
+def run_cli_fallback():
+    """A minimal command-line fallback when Streamlit isn't installed.
+    Provides basic preview, filtering and the 'place' lookup using the same functions.
+    """
+    print("Streamlit is not installed or couldn't be imported. Running CLI fallback.")
+    csv_files = list_csvs(ROOT)
+    if not csv_files:
+        print("No CSV files found in project root. Place CSVs (e.g., crime_merged.csv) in the project root.")
+        return
+
+    for i, name in enumerate(csv_files, 1):
+        print(f"{i}. {name}")
+    sel = input(f"Select file by number or name (1-{len(csv_files)}): ").strip()
+    try:
+        idx = int(sel) - 1
+        selected = csv_files[idx]
+    except Exception:
+        if sel in csv_files:
+            selected = sel
+        else:
+            print("Invalid selection")
+            return
+
+    file_path = ROOT / selected
+    try:
+        df = load_csv(file_path)
+    except Exception as e:
+        print(f"Failed to load {selected}: {e}")
+        return
+
+    print(f"Preview of {selected} (first 10 rows):")
+    print(df.head(10).to_string())
+
+    while True:
+        cmd = input("Options: [f]ilter & save, [s]tats, [p]lace lookup, [q]uit: ").strip().lower()
+        if cmd in ('q', 'quit'):
+            break
+        if cmd.startswith('f'):
+            keep = input("Number of left columns to keep (default 8): ").strip()
+            keep_cols = int(keep) if keep else 8
+            filtered = df.iloc[:, :keep_cols]
+            out_path = ROOT / "crime_filtered.csv"
+            filtered.to_csv(out_path, index=False)
+            print(f"Saved filtered CSV to {out_path}")
+        elif cmd.startswith('s'):
+            print(df.describe(include='all'))
+        elif cmd.startswith('p'):
+            place = input("Place/region name: ").strip()
+            master_df = build_master_df(ROOT)
+            if master_df is None or master_df.empty:
+                print("Master dataset is empty or couldn't be built.")
+                continue
+            norm = place.upper().strip()
+            matches = master_df[master_df['region'].str.upper().str.strip() == norm]
+            if matches.empty:
+                choices = master_df['region'].unique().tolist()
+                sugg = difflib.get_close_matches(place, choices, n=5, cutoff=0.5)
+                if sugg:
+                    print(f"No exact match for '{place}'. Did you mean: {', '.join(sugg)} ?")
+                else:
+                    print(f"No match found for '{place}'.")
+            else:
+                row = matches.iloc[0]
+                print(row.to_frame().T.to_string())
+                model, features = train_risk_model(master_df)
+                X_row = row[features].to_frame().T
+                pred = model.predict(X_row)[0]
+                print(f"Predicted risk score: {pred:.2f}")
+        else:
+            print("Unknown option")
 
 
 def build_master_df(root: Path) -> pd.DataFrame:
